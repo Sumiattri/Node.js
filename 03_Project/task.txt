@@ -1,0 +1,16 @@
+REST API _ JSON
+
+GET/users - get html data
+GET/api/users - List all the users
+
+GET/api/users/1 - Get the user with ID 1 
+
+Dynamic Path Parameters 
+GET/api/users/:id
+:id -> it is dynamic or variable
+
+POST/api/users - Create a new user
+
+PATCH/api/user/1 - Edit the user with ID 1
+
+DELETE/api/users/1 -Delete the user with id 1 
