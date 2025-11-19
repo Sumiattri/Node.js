@@ -12,7 +12,7 @@ mongoose
   .catch((err) => console.log("Mongo Error", err));
 
 //Schema
-const userSchema = mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
     firstName: {
       type: String,
