@@ -6,12 +6,9 @@ const { connectMongoDB } = require("./connection");
 const { logReqRes } = require("./middlewares");
 
 app.use(express.urlencoded({ extended: false }));
-
+app.use(logReqRes("log.txt"));
 app.use("/api/user", userRouter);
 
-app.use(logReqRes("log.txt"));
-
-//Connection
 connectMongoDB("mongodb://127.0.0.1:27017/first-db").then(() =>
   console.log("mongodb connected")
 );
